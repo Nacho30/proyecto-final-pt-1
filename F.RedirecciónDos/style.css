@@ -1,0 +1,180 @@
+.padre {
+    position: relative;
+  }
+  
+  .contenedor {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Ajusta este valor para controlar el espaciado entre elementos */
+  }
+
+  .radio-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .radio-item {
+    display: flex;
+    align-items: center;
+  }
+
+  .botones-container {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    gap: 10px;
+    display: grid;
+    justify-content: left;
+    /* Uncomment the line below to move the buttons up */
+    /* align-items: flex-start; */
+  }
+h3{
+  color: white;
+  font-weight: 100;
+}
+
+/* Estilos generales */
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Estilos del encabezado */
+
+.cabecera {
+    background-color: transparent;
+    /* Fondo transparente */
+    color:white;
+    /* Color de texto */
+    padding: 20px;
+    text-align: center;
+}
+
+label{
+color: white;
+}
+.titulo {
+    font-size: 48px;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    /* Efecto de sombra */
+    transition: text-shadow 0.3s ease;
+    /* Transición suave para el efecto */
+}
+
+.titulo:hover {
+    text-shadow: 4px 4px 8px rgb(255, 255, 255);
+    /* Efecto de sombra al pasar el cursor */
+}
+
+h3:hover {
+    text-shadow: 4px 4px 8px rgb(255, 251, 251);
+    /* Efecto de sombra al pasar el cursor */
+}
+
+input::placeholder {
+    color: #999;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    transition: border-color 0.3s ease;
+    transition: all 0.3s;
+}
+
+input:focus::placeholder {
+    color:black;
+    font-size: 12px;
+    font-weight: normal;
+    letter-spacing: normal;
+}
+
+input {
+    border: 1px solid #000;
+    transition: all 0.3s;
+}
+
+input:focus {
+    border: 1px solid #e74c3c;
+    outline: none;
+}
+input.enviar:hover {
+  background-position-x: left; /* Change this line */
+  transition: background-position-x 2s ease; /* Add this line */
+  }
+
+    input.enviar{
+      display: inline-block;
+      padding: 15px 32px;
+      margin: 4px 2px;
+      border: none;
+      border-radius: 12px;
+      font-size: 16px;
+      font-weight: bold;
+      line-height: 1.5;
+      text-align: center;
+      text-transform: uppercase;
+      white-space: nowrap;
+      user-select: none;
+      cursor: pointer;
+      background: linear-gradient(to right, #03edf5, #100158);
+      background-size: 200% auto;
+      background-position: right center;
+      background-position-x: right; /* Add this line */
+      transition: background-size 0.5s ease;
+      color: white;
+      }
+      
+      input.borrar:hover {
+        background-position-x: left; /* Change this line */
+        transition: background-position-x 2s ease; /* Add this line */
+      }
+      input.borrar{
+        display: inline-block;
+        padding: 15px 32px;
+        margin: 4px 2px;
+        border: none;
+        border-radius: 12px;
+        font-size: 16px;
+        font-weight: bold;
+        line-height: 1.5;
+        text-align: center;
+        text-transform: uppercase;
+        white-space: nowrap;
+        user-select: none;
+        cursor: pointer;
+        background: linear-gradient(to right, #ff1010, #9a0000);
+        background-size: 200% auto;
+        background-position: right center;
+        background-position-x: right; /* Add this line */
+        transition: background-size 0.5s ease;
+        color: #fff;
+      }
+       /* Estilamos el video de fondo */
+#video-fondo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -1; /* Para que el video esté detrás de los demás elementos */
+}
+
+/* Estilamos el header para que se muestre encima del video */
+.header {
+  position: relative;
+  z-index: 1; /* Para que el header esté encima del video */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.5); /* Agregamos un fondo transparente para que se vea el video */
+  color: #fff;
+}
+
+/* Resto del CSS sigue igual */
