@@ -1,0 +1,165 @@
+body{
+    background-position: center ;
+    
+}
+
+.padre {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    gap: 15px;
+}
+#uno {
+    width: 170px;
+    height: 250px;
+    border-radius: 12px;
+    background-image: url(../imagenes/imagen\ 1.jpeg);
+    background-size: cover;
+    background-position: -90px;
+    box-shadow: 0px 15px 19px 1px rgba(0,0,0,0.58);
+-webkit-box-shadow: 0px 15px 19px 1px rgba(0,0,0,0.58);
+-moz-box-shadow: 0px 15px 19px 1px rgba(0,0,0,0.58);
+  
+}
+#dos {
+    width: 170px;
+    height: 250px;
+    border-radius: 12px;
+    background-image: url(../imagenes/imagen\ 2.jpeg);
+    background-size: cover;
+    box-shadow: 0px 15px 19px 1px rgba(0,0,0,0.58);
+-webkit-box-shadow: 0px 15px 19px 1px rgba(0,0,0,0.58);
+-moz-box-shadow: 0px 15px 19px 1px rgba(0,0,0,0.58);
+}
+#tres {
+    width: 170px;
+    height: 250px;
+    border-radius: 12px;
+    background-image: url(../imagenes/imagen\ 3.jpeg);
+    background-size: cover;
+    background-position: -15px;
+    box-shadow: 0px 15px 19px 1px rgba(0,0,0,0.58);
+-webkit-box-shadow: 0px 15px 19px 1px rgba(0,0,0,0.58);
+-moz-box-shadow: 0px 15px 19px 1px rgba(0,0,0,0.58);
+}
+
+.hijo{
+    position: relative;
+    width: 170px;
+    height: 250px;
+    border-radius: 12px;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+
+#uno.hijo::before {
+    content: "15% OFF";
+    display: block;
+    position: absolute;
+    padding: 5px 53.6px;
+    border-radius: 0px 0px 12px 12px;
+    background-image: linear-gradient(#1687ED,#230f40);
+    color: white; 
+    bottom: 0;
+
+}
+
+#dos.hijo::before {
+    content: "20% OFF";
+    display: block;
+    position: absolute;
+    padding: 5px 53.6PX;
+    border-radius: 0px 0px 15px 15px;
+    background-image: linear-gradient(#1687ED,#230f40);
+    color: white; 
+    bottom: 0;
+   
+}
+
+#tres.hijo::before {
+    content: "SIN ESPACIO";
+    display: block;
+    position: absolute;
+    padding: 5px 37.5px;
+    border-radius: 0px 0px 15px 15px;
+    background-image: linear-gradient(#c31432,#240b16);
+    color: white; 
+    bottom: 0;
+    
+    
+}
+
+#uno.hijo {
+    position: relative; /* Añadimos esto para el transition del hover */
+    transition: transform 0.3s ease; /* Añadimos una transición suave para cuando se pasa el cursor */
+}
+
+#uno.hijo:hover::before {
+    opacity: 1; /* Mostramos el texto cuando el cursor está sobre el anuncio */
+}
+
+#uno.hijo:hover {
+    transform: scale(1.05); /* Hacemos una pequeña escala cuando se pasa el cursor */
+}
+
+#dos.hijo {
+    position: relative; 
+    transition: transform 0.3s ease; 
+}
+
+#dos.hijo:hover::before {
+    opacity: 1; 
+}
+
+#dos.hijo:hover {
+    transform: scale(1.05); 
+}
+
+#tres.hijo{
+    position: relative;
+    transition: transform 0.3s ease;
+}
+
+#tres.hijo:hover::before{
+    opacity: 1;
+}
+
+#tres.hijo:hover{
+    transform: scale(1.05);
+}
+
+.enlace{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    z-index: 1;
+}
+ /* Estilamos el video de fondo */
+ #video-fondo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1; /* Para que el video esté detrás de los demás elementos */
+  }
+  
+  /* Estilamos el header para que se muestre encima del video */
+  .header {
+    position: relative;
+    z-index: 1; /* Para que el header esté encima del video */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5); /* Agregamos un fondo transparente para que se vea el video */
+    color: #fff;
+  }
