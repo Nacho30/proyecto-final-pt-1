@@ -93,8 +93,40 @@ body {
     color: #fff;
 }
 
-/* Resto del CSS sigue igual */
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+}
 
-  
+.footer {
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 5px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.text-white {
+  color: white;
+}
+
+.contact-link {
+  color: white;
+  text-decoration: none;
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.contact-link i {
+  margin-right: 5px;
+}
 
   

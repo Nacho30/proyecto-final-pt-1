@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>R & B COMPANY - Tu gimnasio de confianza</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="cabecera">
+        <h1 class="titulo">R & B COMPANY</h1>
+    </header>
+    <main>
+        <div class="padre contenedor">
+            <form action="https://localhost:8080/api/registro" method="post" id="form">
+                <label for=""></label>
+                <h3>Nombre del usuario</h3>
+                <input type="text" name="Nombre del usuario" id="" class="nombreusuario"
+                    placeholder="Nombre del usuario">
+                <h3>Contraseña del usuario</h3>
+                <input type="password" name="Contraseña del usuario" class="contraseña usuario"
+                    id="Contraseña del usuario" placeholder="Contraseña del usuario">
+                <h3>Digite numero de seguridad de su tarjeta</h3>
+                <input type="password" name="numeroTarjeta" class="DigiteLosTresNumeros" id="numeroTarjeta"
+                    placeholder="Digite los 3 numeros">
+                <h3>Número celular</h3>
+                <input type="tel" name="numeroCelular" class="DigiteNumero" id="numeroCelular"
+                    placeholder="Digite su número celular">
+                <h3>Sabores</h3>
+                <div class="radio-container">
+                    <div class="radio-item">
+                        <input type="radio" id="Sabor" name="Sabor" value="SaborVanillaIceCream">
+                        <label for="Sabor">Vanilla Ice Cream</label>
+                    </div>
+                    <div class="radio-item">
+                        <input type="radio" id="Sabor" name="Sabor" value="SaborChocolate">
+                        <label for="Sabor">Chocolate </label>
+                    </div>
+                    <div class="radio-item">
+                        <input type="radio" id="Sabor" name="Sabor" value="SaborLimaFrutosRojos">
+                        <label for="Sabor">Lima y Frutos Rojos</label>
+                    </div>
+                </div>
+                <h3>Medidas en gr</h3>
+                <select id="pais" name="pais">
+                    <option value="">Seleccione una medida</option>
+                    <option value="5kg">5kg</option>
+                    <option value="3kg">3kg</option>
+                    <option value="1kg">1kg</option>
+                    <option value="500gr">500gr</option>
+                </select>
+                <h3>DEPARTAMENTO DONDE VIVE</h3>
+                <select id="distrito" name="distrito">
+                    <option value="">Seleccione el Departamento donde vive</option>
+                    <option value="">Santa Rosa</option>
+                    <option value="">Rivadavia</option>
+                    <option value="">La Paz</option>
+                    <option value="">Tupungato</option>
+                    <option value="">General Alvear</option>
+                    <option value="">San Rafael</option>
+                    <option value="">San Carlos</option>
+                    <option value="">Tunuyán</option>
+                    <option value="">Luján de Cuyo</option>
+                    <option value="">Las Heras</option>
+                    <option value="">Lavalle</option>
+                    <option value="">Malargüe</option>
+                    <option value="">Guaymallén</option>
+                    <option value="">Maipú</option>
+                    <option value="">Capital</option>
+                    <option value="">Godoy Cruz</option>
+                    <option value="">Junín</option>
+                    <option value="">San Martín</option>
+                </select>
+                <div class="botones-container"><input type="submit" class="enviar" value="ENVIAR"> <input type="reset"
+                        class="borrar" value="BORRAR"></div>
+            </form>
+        </div>
+        <video autoplay loop muted id="video-fondo">
+            <source src="../D.Imagenes/b876313a-4c9b-47c4-9d53-c9326c72be3a.mp4" type="video/mp4">
+        </video>
+    </main>
+</body>
+
+</html>

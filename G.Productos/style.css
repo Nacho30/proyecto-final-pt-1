@@ -95,12 +95,60 @@ body {
 
 /* Resto del CSS sigue igual */
 .padre {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
     justify-content: center;
     position: relative;
     gap: 15px;
 }
+
+ .boton-carrito{
+    display: inline-block;
+        padding: 15px 15px;
+        margin: 4px 2px;
+        border: none;
+        border-radius: 12px;
+        font-size: 10px;
+        font-weight: bold;
+        line-height: 1.5;
+        text-align: center;
+        text-transform: uppercase;
+        white-space: nowrap;
+        user-select: none;
+        cursor: pointer;
+        background: linear-gradient(to right,#0000ff, #000000);
+        background-size: 200% auto;
+        background-position: right center;
+        background-position-x: right; /* Add this line */
+        transition: background-size 0.5s ease;
+        color: #fff;
+ }
+
+h2:hover{
+    text-shadow: 4px 4px 8px rgb(255, 251, 251);
+    /* Efecto de sombra al pasar el cursor */
+}
+
+p:hover{
+    text-shadow: 4px 4px 8px rgb(255, 251, 251);
+    /* Efecto de sombra al pasar el cursor */
+}
+
+ .boton-carrito:hover {
+    background-position-x: left; /* Change this line */
+    transition: background-position-x 2s ease; /* Add this line */
+  }
+
+.info-producto{
+    background-image: linear-gradient( #000000,#00000c);
+    color: #fff;
+    border-radius: 12px;
+    width: 140px;
+    margin-top: 0;
+    padding: 15px 15px;
+}
+
+
 #uno {
     width: 170px;
     height: 250px;
@@ -231,4 +279,12 @@ body {
     height: 100%;
     cursor: pointer;
     z-index: 1;
+}
+
+.icon-carrito{
+    width: 40px;
+    align-self: start;
+    margin-top: 0%;
+    margin-right: 10px;
+    margin-left: 350px;
 }
