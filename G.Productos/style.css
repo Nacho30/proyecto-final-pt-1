@@ -1,10 +1,10 @@
 body {
     margin: 0%;
     padding: 0%;
-  }
-  
-  
-  .header {
+}
+
+
+.header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -12,65 +12,66 @@ body {
     background-color: #333;
     color: #fff;
     background-position: cover;
-  }
-  
-  .logo {
+}
+
+.logo {
     display: flex;
     align-items: center;
-  }
-  
-  .logo h1 {
+}
+
+.logo h1 {
     margin: 0;
     font-size: 24px;
     color: #fff;
-  }
-  
-  .logo img {
+}
+
+.logo img {
     width: 50px;
     height: 50px;
     border-radius: 50%;
     margin-right: 20px;
     object-fit: cover;
-  }
-  
-  nav {
+}
+
+nav {
     display: flex;
     align-items: center;
     height: 100%;
-  }
-  
-  nav ul {
+}
+
+nav ul {
     list-style: none;
     margin: 0;
     padding: 0;
     display: flex;
     align-self: center;
     height: 100%;
-  
+
     padding: 10px;
     border-radius: 5px;
-  }
-  
-  nav ul li {
+}
+
+nav ul li {
     margin-right: 20px;
     height: 100%;
     display: flex;
     align-items: center;
-  }
-  
-  nav ul li:last-child {
+}
+
+nav ul li:last-child {
     margin-right: 0;
-  }
-  
-  nav ul li a {
+}
+
+nav ul li a {
     color: #fff;
     text-decoration: none;
     height: 100%;
     display: flex;
     align-items: center;
     padding: 5px;
-  }
-  /* Estilamos el video de fondo */
+}
+
+/* Estilamos el video de fondo */
 #video-fondo {
     position: fixed;
     top: 0;
@@ -78,69 +79,74 @@ body {
     width: 100%;
     height: 100vh;
     object-fit: cover;
-    z-index: -1; /* Para que el video esté detrás de los demás elementos */
+    z-index: -1;
+    /* Para que el video esté detrás de los demás elementos */
 }
 
 /* Estilamos el header para que se muestre encima del video */
 .header {
     position: relative;
-    z-index: 1; /* Para que el header esté encima del video */
+    z-index: 1;
+    /* Para que el header esté encima del video */
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    background-color: rgba(0, 0, 0, 0.5); /* Agregamos un fondo transparente para que se vea el video */
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Agregamos un fondo transparente para que se vea el video */
     color: #fff;
 }
 
 /* Resto del CSS sigue igual */
 .padre {
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    justify-content: center;
+    display: flex;
+    justify-content: space-evenly;
     position: relative;
     gap: 15px;
 }
 
- .boton-carrito{
+.boton-carrito {
     display: inline-block;
-        padding: 15px 15px;
-        margin: 4px 2px;
-        border: none;
-        border-radius: 12px;
-        font-size: 10px;
-        font-weight: bold;
-        line-height: 1.5;
-        text-align: center;
-        text-transform: uppercase;
-        white-space: nowrap;
-        user-select: none;
-        cursor: pointer;
-        background: linear-gradient(to right,#0000ff, #000000);
-        background-size: 200% auto;
-        background-position: right center;
-        background-position-x: right; /* Add this line */
-        transition: background-size 0.5s ease;
-        color: #fff;
- }
+    padding: 15px 15px;
+    margin: 4px 2px;
+    border: none;
+    border-radius: 12px;
+    font-size: 10px;
+    font-weight: bold;
+    line-height: 1.5;
+    text-align: center;
+    text-transform: uppercase;
+    white-space: nowrap;
+    user-select: none;
+    cursor: pointer;
+    background: linear-gradient(to right, #0000ff, #000000);
+    background-size: 200% auto;
+    background-position: right center;
+    background-position-x: right;
+    /* Add this line */
+    transition: background-size 0.5s ease;
+    color: #fff;
+}
 
-h2:hover{
+h2:hover {
     text-shadow: 4px 4px 8px rgb(255, 251, 251);
     /* Efecto de sombra al pasar el cursor */
 }
 
-p:hover{
+p:hover {
     text-shadow: 4px 4px 8px rgb(255, 251, 251);
     /* Efecto de sombra al pasar el cursor */
 }
 
- .boton-carrito:hover {
-    background-position-x: left; /* Change this line */
-    transition: background-position-x 2s ease; /* Add this line */
-  }
+.boton-carrito:hover {
+    background-position-x: left;
+    /* Change this line */
+    transition: background-position-x 2s ease;
+    /* Add this line */
+}
 
-.info-producto{
-    background-image: linear-gradient( #000000,#00000c);
+.info-producto {
+    background-image: linear-gradient(#000000, #00000c);
     color: #fff;
     border-radius: 12px;
     width: 140px;
@@ -155,22 +161,24 @@ p:hover{
     border-radius: 12px;
     background-image: url(../D.Imagenes/Proteina.png);
     background-size: cover;
-   
+
     box-shadow: 0px 15px 19px 1px rgba(0, 0, 0, 0.58);
--webkit-box-shadow: 0px 15px 19px 1px rgba(0,0,0,0.58);
--moz-box-shadow: 0px 15px 19px 1px rgba(0,0,0,0.58);
-  
+    -webkit-box-shadow: 0px 15px 19px 1px rgba(0, 0, 0, 0.58);
+    -moz-box-shadow: 0px 15px 19px 1px rgba(0, 0, 0, 0.58);
+
 }
+
 #dos {
     width: 170px;
     height: 250px;
     border-radius: 12px;
     background-image: url(../D.Imagenes/RemeraDos.png);
     background-size: cover;
-    box-shadow: 0px 15px 19px 1px rgba(0,0,0,0.58);
--webkit-box-shadow: 0px 15px 19px 1px rgba(0,0,0,0.58);
--moz-box-shadow: 0px 15px 19px 1px rgba(0,0,0,0.58);
+    box-shadow: 0px 15px 19px 1px rgba(0, 0, 0, 0.58);
+    -webkit-box-shadow: 0px 15px 19px 1px rgba(0, 0, 0, 0.58);
+    -moz-box-shadow: 0px 15px 19px 1px rgba(0, 0, 0, 0.58);
 }
+
 #tres {
     width: 170px;
     height: 250px;
@@ -178,12 +186,12 @@ p:hover{
     background-image: url(../D.Imagenes/Short.png);
     background-size: cover;
     background-position: -15px;
-    box-shadow: 0px 15px 19px 1px rgba(0,0,0,0.58);
--webkit-box-shadow: 0px 15px 19px 1px rgba(0,0,0,0.58);
--moz-box-shadow: 0px 15px 19px 1px rgba(0,0,0,0.58);
+    box-shadow: 0px 15px 19px 1px rgba(0, 0, 0, 0.58);
+    -webkit-box-shadow: 0px 15px 19px 1px rgba(0, 0, 0, 0.58);
+    -moz-box-shadow: 0px 15px 19px 1px rgba(0, 0, 0, 0.58);
 }
 
-.hijo{
+.hijo {
     position: relative;
     width: 170px;
     height: 250px;
@@ -201,8 +209,8 @@ p:hover{
     position: absolute;
     padding: 5px 55px;
     border-radius: 0px 0px 12px 12px;
-    background-image: linear-gradient(#1687ED,#230f40);
-    color: white; 
+    background-image: linear-gradient(#1687ED, #230f40);
+    color: white;
     bottom: 0;
 
 }
@@ -213,10 +221,10 @@ p:hover{
     position: absolute;
     padding: 5px 57PX;
     border-radius: 0px 0px 15px 15px;
-    background-image: linear-gradient(#1687ED,#230f40);
-    color: white; 
+    background-image: linear-gradient(#1687ED, #230f40);
+    color: white;
     bottom: 0;
-   
+
 }
 
 #tres.hijo::before {
@@ -225,53 +233,57 @@ p:hover{
     position: absolute;
     padding: 5px 65px;
     border-radius: 0px 0px 15px 15px;
-    background-image: linear-gradient(#1687ED,#230f40);
-    color: white; 
+    background-image: linear-gradient(#1687ED, #230f40);
+    color: white;
     bottom: 0;
-    
-    
+
+
 }
 
 #uno.hijo {
-    position: relative; /* Añadimos esto para el transition del hover */
-    transition: transform 0.3s ease; /* Añadimos una transición suave para cuando se pasa el cursor */
+    position: relative;
+    /* Añadimos esto para el transition del hover */
+    transition: transform 0.3s ease;
+    /* Añadimos una transición suave para cuando se pasa el cursor */
 }
 
 #uno.hijo:hover::before {
-    opacity: 1; /* Mostramos el texto cuando el cursor está sobre el anuncio */
+    opacity: 1;
+    /* Mostramos el texto cuando el cursor está sobre el anuncio */
 }
 
 #uno.hijo:hover {
-    transform: scale(1.05); /* Hacemos una pequeña escala cuando se pasa el cursor */
+    transform: scale(1.05);
+    /* Hacemos una pequeña escala cuando se pasa el cursor */
 }
 
 #dos.hijo {
-    position: relative; 
-    transition: transform 0.3s ease; 
-}
-
-#dos.hijo:hover::before {
-    opacity: 1; 
-}
-
-#dos.hijo:hover {
-    transform: scale(1.05); 
-}
-
-#tres.hijo{
     position: relative;
     transition: transform 0.3s ease;
 }
 
-#tres.hijo:hover::before{
+#dos.hijo:hover::before {
     opacity: 1;
 }
 
-#tres.hijo:hover{
+#dos.hijo:hover {
     transform: scale(1.05);
 }
 
-.enlace{
+#tres.hijo {
+    position: relative;
+    transition: transform 0.3s ease;
+}
+
+#tres.hijo:hover::before {
+    opacity: 1;
+}
+
+#tres.hijo:hover {
+    transform: scale(1.05);
+}
+
+.enlace {
     position: absolute;
     top: 0;
     left: 0;
@@ -281,7 +293,7 @@ p:hover{
     z-index: 1;
 }
 
-.icon-carrito{
+.icon-carrito {
     width: 40px;
     align-self: start;
     margin-top: 0%;
