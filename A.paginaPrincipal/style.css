@@ -96,13 +96,6 @@ nav ul li a {
   color: #fff;
 }
 
-.footer {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  z-index: 100;
-}
 
 .footer {
   background-color: rgba(0, 0, 0, 0.2);
@@ -130,4 +123,411 @@ nav ul li a {
 
 .contact-link i {
   margin-right: 5px;
+}
+
+.padre2 {
+  display: flex;
+  justify-content: space-evenly;
+  position: relative;
+  gap: 15px;
+}
+
+.boton-carrito2 {
+  display: inline-block;
+  padding: 15px 15px;
+  margin: 4px 2px;
+  border: none;
+  border-radius: 12px;
+  font-size: 10px;
+  font-weight: bold;
+  line-height: 1.5;
+  text-align: center;
+  text-transform: uppercase;
+  white-space: nowrap;
+  user-select: none;
+  cursor: pointer;
+  background: linear-gradient(to right, #0000ff, #000000);
+  background-size: 200% auto;
+  background-position: right center;
+  background-position-x: right;
+  /* Add this line */
+  transition: background-size 0.5s ease;
+  color: #fff;
+}
+
+h2:hover {
+  text-shadow: 4px 4px 8px rgb(255, 251, 251);
+  /* Efecto de sombra al pasar el cursor */
+}
+
+p:hover {
+  text-shadow: 4px 4px 8px rgb(255, 251, 251);
+  /* Efecto de sombra al pasar el cursor */
+}
+
+.boton-carrito2:hover {
+  background-position-x: left;
+  /* Change this line */
+  transition: background-position-x 2s ease;
+  /* Add this line */
+}
+
+.info-producto2 {
+  background-image: linear-gradient(#000000, #00000c);
+  color: #fff;
+  border-radius: 12px;
+  width: 140px;
+  margin-top: 0;
+  padding: 15px 15px;
+}
+
+
+#uno2 {
+  width: 170px;
+  height: 250px;
+  border-radius: 12px;
+  background-image: url(../D.Imagenes/Proteina.png);
+  background-size: cover;
+
+  box-shadow: 0px 15px 19px 1px rgba(0, 0, 0, 0.58);
+  -webkit-box-shadow: 0px 15px 19px 1px rgba(0, 0, 0, 0.58);
+  -moz-box-shadow: 0px 15px 19px 1px rgba(0, 0, 0, 0.58);
+
+}
+
+#dos2 {
+  width: 170px;
+  height: 250px;
+  border-radius: 12px;
+  background-image: url(../D.Imagenes/RemeraDos.png);
+  background-size: cover;
+  box-shadow: 0px 15px 19px 1px rgba(0, 0, 0, 0.58);
+  -webkit-box-shadow: 0px 15px 19px 1px rgba(0, 0, 0, 0.58);
+  -moz-box-shadow: 0px 15px 19px 1px rgba(0, 0, 0, 0.58);
+}
+
+#tres2 {
+  width: 170px;
+  height: 250px;
+  border-radius: 12px;
+  background-image: url(../D.Imagenes/Short.png);
+  background-size: cover;
+  background-position: -15px;
+  box-shadow: 0px 15px 19px 1px rgba(0, 0, 0, 0.58);
+  -webkit-box-shadow: 0px 15px 19px 1px rgba(0, 0, 0, 0.58);
+  -moz-box-shadow: 0px 15px 19px 1px rgba(0, 0, 0, 0.58);
+}
+
+.hijo2 {
+  position: relative;
+  width: 170px;
+  height: 250px;
+  border-radius: 12px;
+  background-size: cover;
+  background-position: center;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+
+#uno2.hijo2::before {
+  content: "Proteínas";
+  display: block;
+  position: absolute;
+  padding: 5px 55px;
+  border-radius: 0px 0px 12px 12px;
+  background-image: linear-gradient(#1687ED, #230f40);
+  color: white;
+  bottom: 0;
+
+}
+
+#dos2.hijo2::before {
+  content: "Remeras";
+  display: block;
+  position: absolute;
+  padding: 5px 57PX;
+  border-radius: 0px 0px 15px 15px;
+  background-image: linear-gradient(#1687ED, #230f40);
+  color: white;
+  bottom: 0;
+
+}
+
+#tres2.hijo2::before {
+  content: "Shorts";
+  display: block;
+  position: absolute;
+  padding: 5px 65px;
+  border-radius: 0px 0px 15px 15px;
+  background-image: linear-gradient(#1687ED, #230f40);
+  color: white;
+  bottom: 0;
+
+
+}
+
+#uno2.hijo2 {
+  position: relative;
+  /* Añadimos esto para el transition del hover */
+  transition: transform 0.3s ease;
+  /* Añadimos una transición suave para cuando se pasa el cursor */
+}
+
+#uno2.hijo2:hover::before {
+  opacity: 1;
+  /* Mostramos el texto cuando el cursor está sobre el anuncio */
+}
+
+#uno2.hijo2:hover {
+  transform: scale(1.05);
+  /* Hacemos una pequeña escala cuando se pasa el cursor */
+}
+
+#dos2.hijo2 {
+  position: relative;
+  transition: transform 0.3s ease;
+}
+
+#dos2.hijo2:hover::before {
+  opacity: 1;
+}
+
+#dos2.hijo2:hover {
+  transform: scale(1.05);
+}
+
+#tres2.hijo2 {
+  position: relative;
+  transition: transform 0.3s ease;
+}
+
+#tres2.hijo2:hover::before {
+  opacity: 1;
+}
+
+#tres2.hijo2:hover {
+  transform: scale(1.05);
+}
+
+.enlace {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.padre {
+  display: flex;
+  justify-content: space-evenly;
+  position: relative;
+  gap: 15px;
+}
+
+#uno {
+  width: 170px;
+  height: 250px;
+  border-radius: 12px;
+  background-image: url(../D.Imagenes/imagenUno.jpeg);
+  background-size: cover;
+  background-position: -90px;
+  box-shadow: 0px 15px 19px 1px rgba(0, 0, 0, 0.58);
+  -webkit-box-shadow: 0px 15px 19px 1px rgba(0, 0, 0, 0.58);
+  -moz-box-shadow: 0px 15px 19px 1px rgba(0, 0, 0, 0.58);
+
+}
+
+#dos {
+  width: 170px;
+  height: 250px;
+  border-radius: 12px;
+  background-image: url(../D.Imagenes/imagenDos.jpeg);
+  background-size: cover;
+  box-shadow: 0px 15px 19px 1px rgba(0, 0, 0, 0.58);
+  -webkit-box-shadow: 0px 15px 19px 1px rgba(0, 0, 0, 0.58);
+  -moz-box-shadow: 0px 15px 19px 1px rgba(0, 0, 0, 0.58);
+}
+
+#tres {
+  width: 170px;
+  height: 250px;
+  border-radius: 12px;
+  background-image: url(../D.Imagenes/imagenTres.jpeg);
+  background-size: cover;
+  background-position: -15px;
+  box-shadow: 0px 15px 19px 1px rgba(0, 0, 0, 0.58);
+  -webkit-box-shadow: 0px 15px 19px 1px rgba(0, 0, 0, 0.58);
+  -moz-box-shadow: 0px 15px 19px 1px rgba(0, 0, 0, 0.58);
+}
+
+.hijo {
+  position: relative;
+  width: 170px;
+  height: 250px;
+  border-radius: 12px;
+  background-size: cover;
+  background-position: center;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+
+#uno.hijo::before {
+  content: "15% OFF";
+  display: block;
+  position: absolute;
+  padding: 5px 53.6px;
+  border-radius: 0px 0px 12px 12px;
+  background-image: linear-gradient(#1687ED, #230f40);
+  color: white;
+  bottom: 0;
+
+}
+
+#dos.hijo::before {
+  content: "20% OFF";
+  display: block;
+  position: absolute;
+  padding: 5px 53.6PX;
+  border-radius: 0px 0px 15px 15px;
+  background-image: linear-gradient(#1687ED, #230f40);
+  color: white;
+  bottom: 0;
+
+}
+
+#tres.hijo::before {
+  content: "SIN ESPACIO";
+  display: block;
+  position: absolute;
+  padding: 5px 37.5px;
+  border-radius: 0px 0px 15px 15px;
+  background-image: linear-gradient(#c31432, #240b16);
+  color: white;
+  bottom: 0;
+
+
+}
+
+#uno.hijo {
+  position: relative;
+  /* Añadimos esto para el transition del hover */
+  transition: transform 0.3s ease;
+  /* Añadimos una transición suave para cuando se pasa el cursor */
+}
+
+#uno.hijo:hover::before {
+  opacity: 1;
+  /* Mostramos el texto cuando el cursor está sobre el anuncio */
+}
+
+#uno.hijo:hover {
+  transform: scale(1.05);
+  /* Hacemos una pequeña escala cuando se pasa el cursor */
+}
+
+#dos.hijo {
+  position: relative;
+  transition: transform 0.3s ease;
+}
+
+#dos.hijo:hover::before {
+  opacity: 1;
+}
+
+#dos.hijo:hover {
+  transform: scale(1.05);
+}
+
+#tres.hijo {
+  position: relative;
+  transition: transform 0.3s ease;
+}
+
+#tres.hijo:hover::before {
+  opacity: 1;
+}
+
+#tres.hijo:hover {
+  transform: scale(1.05);
+}
+
+.enlace {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.info-producto {
+  background-image: linear-gradient(#000000, #00000c);
+  color: #fff;
+  border-radius: 12px;
+  width: 140px;
+  margin-top: 0;
+  padding: 10px 15px;
+}
+
+h2:hover {
+  text-shadow: 4px 4px 8px rgb(255, 251, 251);
+  /* Efecto de sombra al pasar el cursor */
+}
+
+h2 {
+  font-size: medium;
+}
+
+p:hover {
+  text-shadow: 4px 4px 8px rgb(255, 251, 251);
+  /* Efecto de sombra al pasar el cursor */
+}
+
+.totalAcerca {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 30px 100px;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.textoAcerca {
+  color: white;
+  justify-content: center;
+}
+
+#Introduccion {
+  display: flex;
+  margin: 5vw 10vw;
+  padding: 20px;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+}
+
+#bienvenida {
+  font-size: 30px;
+}
+
+#textoBienvenida {
+  font-size: 20px;
+}
+
+.losTitulos {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  color: white;
+  padding: 10px 36vw;
+}
+
+.divTitulos {
+  display: flex;
+  justify-content: center;
 }
