@@ -191,43 +191,6 @@ p:hover {
   padding: 15px 15px;
 }
 
-
-#uno2 {
-  width: 170px;
-  height: 250px;
-  border-radius: 12px;
-  background-image: url(../D.Imagenes/Proteina.png);
-  background-size: cover;
-
-  box-shadow: 0px 15px 19px 1px rgba(0, 0, 0, 0.58);
-  -webkit-box-shadow: 0px 15px 19px 1px rgba(0, 0, 0, 0.58);
-  -moz-box-shadow: 0px 15px 19px 1px rgba(0, 0, 0, 0.58);
-
-}
-
-#dos2 {
-  width: 170px;
-  height: 250px;
-  border-radius: 12px;
-  background-image: url(../D.Imagenes/RemeraDos.png);
-  background-size: cover;
-  box-shadow: 0px 15px 19px 1px rgba(0, 0, 0, 0.58);
-  -webkit-box-shadow: 0px 15px 19px 1px rgba(0, 0, 0, 0.58);
-  -moz-box-shadow: 0px 15px 19px 1px rgba(0, 0, 0, 0.58);
-}
-
-#tres2 {
-  width: 170px;
-  height: 250px;
-  border-radius: 12px;
-  background-image: url(../D.Imagenes/Short.png);
-  background-size: cover;
-  background-position: -15px;
-  box-shadow: 0px 15px 19px 1px rgba(0, 0, 0, 0.58);
-  -webkit-box-shadow: 0px 15px 19px 1px rgba(0, 0, 0, 0.58);
-  -moz-box-shadow: 0px 15px 19px 1px rgba(0, 0, 0, 0.58);
-}
-
 .hijo2 {
   position: relative;
   width: 170px;
@@ -239,8 +202,98 @@ p:hover {
   transition: transform 0.3s ease;
 }
 
+#clase-uno2 {
+  background-image: url("../D.Imagenes/Proteina.png");
 
-#uno2.hijo2::before {
+}
+
+
+#clase-uno2::before {
+  content: "Remeras";
+
+  background-image: linear-gradient(#1687ED, #230f40);
+}
+
+#clase-dos2 {
+  background-image: url(../D.Imagenes/RemeraDos.png);
+
+}
+
+#clase-dos2::before {
+  content: "Remeras";
+
+  background-image: linear-gradient(#1687ED, #230f40);
+}
+
+
+
+#clase-tres2 {
+  background-image: url(../D.Imagenes/Short.png);
+}
+
+
+#clase-tres2::before {
+  content: "Remeras";
+
+  background-image: linear-gradient(#1687ED, #230f40);
+}
+
+#clase-uno {
+  background-image: url(../D.Imagenes/imagenUno.jpeg);
+
+}
+
+#clase-uno::before {
+  content: "Remeras";
+  background-image: linear-gradient(#1687ED, #230f40);
+}
+
+#clase-dos {
+  background-image: url(../D.Imagenes/imagenDos.jpeg);
+}
+
+#clase-dos::before {
+  content: "Remeras";
+  background-image: linear-gradient(#1687ED, #230f40);
+}
+
+#clase-tres {
+  background-image: url(../D.Imagenes/imagenTres.jpeg);
+}
+
+#clase-tres::before {
+  content: "SIN ESPACIO";
+  background-image: linear-gradient(#c31432, #240b16);
+}
+
+.card-clases {
+  position: relative;
+  width: 170px;
+  height: 250px;
+  border-radius: 12px;
+  background-size: cover;
+  background-position: center;
+  cursor: pointer;
+  background-size: cover;
+  box-shadow: 0px 15px 19px 1px rgba(0, 0, 0, 0.58);
+  -webkit-box-shadow: 0px 15px 19px 1px rgba(0, 0, 0, 0.58);
+  -moz-box-shadow: 0px 15px 19px 1px rgba(0, 0, 0, 0.58);
+  transition: transform 0.3s ease;
+}
+
+.card-clases::before {
+  display: block;
+  position: absolute;
+  padding: 5px 10px;
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 0px 0px 12px 12px;
+  color: white;
+  bottom: 0;
+}
+
+
+.hijo2::before {
   content: "Proteínas";
   display: block;
   position: absolute;
@@ -277,19 +330,19 @@ p:hover {
 
 }
 
-#uno2.hijo2 {
+.hijo2 {
   position: relative;
   /* Añadimos esto para el transition del hover */
   transition: transform 0.3s ease;
   /* Añadimos una transición suave para cuando se pasa el cursor */
 }
 
-#uno2.hijo2:hover::before {
+.hijo2:hover::before {
   opacity: 1;
   /* Mostramos el texto cuando el cursor está sobre el anuncio */
 }
 
-#uno2.hijo2:hover {
+.hijo2:hover {
   transform: scale(1.05);
   /* Hacemos una pequeña escala cuando se pasa el cursor */
 }
@@ -337,41 +390,7 @@ p:hover {
   gap: 15px;
 }
 
-#uno {
-  width: 170px;
-  height: 250px;
-  border-radius: 12px;
-  background-image: url(../D.Imagenes/imagenUno.jpeg);
-  background-size: cover;
-  background-position: -90px;
-  box-shadow: 0px 15px 19px 1px rgba(0, 0, 0, 0.58);
-  -webkit-box-shadow: 0px 15px 19px 1px rgba(0, 0, 0, 0.58);
-  -moz-box-shadow: 0px 15px 19px 1px rgba(0, 0, 0, 0.58);
 
-}
-
-#dos {
-  width: 170px;
-  height: 250px;
-  border-radius: 12px;
-  background-image: url(../D.Imagenes/imagenDos.jpeg);
-  background-size: cover;
-  box-shadow: 0px 15px 19px 1px rgba(0, 0, 0, 0.58);
-  -webkit-box-shadow: 0px 15px 19px 1px rgba(0, 0, 0, 0.58);
-  -moz-box-shadow: 0px 15px 19px 1px rgba(0, 0, 0, 0.58);
-}
-
-#tres {
-  width: 170px;
-  height: 250px;
-  border-radius: 12px;
-  background-image: url(../D.Imagenes/imagenTres.jpeg);
-  background-size: cover;
-  background-position: -15px;
-  box-shadow: 0px 15px 19px 1px rgba(0, 0, 0, 0.58);
-  -webkit-box-shadow: 0px 15px 19px 1px rgba(0, 0, 0, 0.58);
-  -moz-box-shadow: 0px 15px 19px 1px rgba(0, 0, 0, 0.58);
-}
 
 .hijo {
   position: relative;
