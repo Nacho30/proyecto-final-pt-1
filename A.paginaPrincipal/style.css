@@ -209,8 +209,8 @@ p:hover {
 
 
 #clase-uno2::before {
-  content: "Remeras";
-
+  content: "Proteinas";
+  justify-content: center;
   background-image: linear-gradient(#1687ED, #230f40);
 }
 
@@ -233,7 +233,7 @@ p:hover {
 
 
 #clase-tres2::before {
-  content: "Remeras";
+  content: "Shorts";
 
   background-image: linear-gradient(#1687ED, #230f40);
 }
@@ -244,7 +244,7 @@ p:hover {
 }
 
 #clase-uno::before {
-  content: "Remeras";
+  content: "20% OFF";
   background-image: linear-gradient(#1687ED, #230f40);
 }
 
@@ -253,7 +253,7 @@ p:hover {
 }
 
 #clase-dos::before {
-  content: "Remeras";
+  content: "15% OFF";
   background-image: linear-gradient(#1687ED, #230f40);
 }
 
@@ -302,14 +302,13 @@ p:hover {
   background-image: linear-gradient(#1687ED, #230f40);
   color: white;
   bottom: 0;
-
 }
 
 #dos2.hijo2::before {
   content: "Remeras";
   display: block;
   position: absolute;
-  padding: 5px 57PX;
+  padding: 5px 65PX;
   border-radius: 0px 0px 15px 15px;
   background-image: linear-gradient(#1687ED, #230f40);
   color: white;
@@ -317,17 +316,15 @@ p:hover {
 
 }
 
-#tres2.hijo2::before {
+#clase-tres2::before {
   content: "Shorts";
   display: block;
   position: absolute;
-  padding: 5px 65px;
-  border-radius: 0px 0px 15px 15px;
+  padding: 5px 10px;
+  border-radius: 0px 0px 12px 12px;
   background-image: linear-gradient(#1687ED, #230f40);
   color: white;
   bottom: 0;
-
-
 }
 
 .hijo2 {
@@ -374,6 +371,7 @@ p:hover {
 }
 
 .enlace {
+  display: flex;
   position: absolute;
   top: 0;
   left: 0;
